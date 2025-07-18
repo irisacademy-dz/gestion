@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRIS Language Academy - Management</title>
+    <style>
+        :root {
+            --iris-purple: #5D3FD3;
+            --iris-light: #A78BFA;
+            --iris-dark: #4C1D95;
+            --iris-petal: linear-gradient(135deg, #9F7AEA 0%, #5D3FD3 100%);
+            --accounting-red: #DC2626;
+            --accounting-light: #FECACA;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f3ff;
+            color: #333;
+        }
+        
+        header {
+            background: var(--iris-petal);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        
+        .logo i {
+            font-size: 2.5rem;
+            margin-right: 15px;
+        }
+        
+        h1 {
+            margin: 0;
+            font-weight: 600;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--iris-purple);
+        }
+        
+        .card.accounting {
+            border-top: 4px solid var(--accounting-red);
+            background-color: #FFF5F5;
+        }
+        
+        .card.accounting h2 {
+            color: var(--accounting-red);
+        }
+        
+        .card.accounting .btn {
+            background: var(--accounting-red);
+        }
+        
+        .card.accounting .btn:hover {
+            background: #B91C1C;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        }
+        
+        .card h2 {
+            color: var(--iris-dark);
+            margin-top: 0;
+            font-size: 1.3rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--iris-purple);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 15px;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: var(--iris-dark);
+        }
+        
+        .iris-icon {
+            width: 30px;
+            height: 30px;
+            background: var(--iris-petal);
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-right: 10px;
+        }
+        
+        .accounting-icon {
+            background: var(--accounting-red);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: var(--iris-dark);
+            color: white;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-spa"></i>
+            <h1>IRIS Language Academy Management</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <!-- Accounting Section - NEW -->
+        <div class="card accounting">
+            <h2><span class="iris-icon accounting-icon"><i class="fas fa-file-invoice-dollar"></i></span>Agence comptable</h2>
+            <p><strong>Section critique :</strong> Maissa doit mettre à jour les preuves de paiement reçues instantanément ici.</p>
+            <a href="https://docs.google.com/forms/d/1WsNKB6GAwauSet_gkCLwsOyHLvhBY1CIgJM9zuHCcJo/edit" class="btn" target="_blank">Accéder au formulaire</a>
+        </div>
+        
+        <!-- Inscriptions Section -->
+        <div class="card">
+            <h2><span class="iris-icon"><i class="fas fa-user-plus"></i></span>Demande d'inscription</h2>
+            <p>Cette section est un lien de formulaire des nouvelles inscriptions.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5TEzZs6VIsfSzBEebJzd-Ti5pdUyN-pkSQb520TpusjJ6PQ/viewform?usp=sharing&ouid=116514802941437704673" class="btn" target="_blank">Accéder au formulaire</a>
+        </div>
+        
+        <!-- Préinscrits Section -->
+        <div class="card">
+            <h2><span class="iris-icon"><i class="fas fa-list"></i></span>Liste des préinscrits</h2>
+            <p>Liste des préinscrits dans toutes les matières (allemand, anglais ou autre). Mise à jour en temps réel.</p>
+            <a href="https://docs.google.com/spreadsheets/d/1Svc2M9gqeEN-vwzlpP9yqAIDWRwRoHpfN_ZY02mET9M/edit?resourcekey=&gid=1062173178#gid=1062173178" class="btn" target="_blank">Voir la liste</a>
+        </div>
+        
+        <!-- Séance gratuite Section -->
+        <div class="card">
+            <h2><span class="iris-icon"><i class="fas fa-gift"></i></span>Demande de séance gratuite</h2>
+            <p>Formulaire pour les demandes de séances gratuites.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSep435kXmGJJeUjhQEmbCyeWOYYcGCMGn-v6rNadpCd3GaA5w/viewform?usp=sharing&ouid=116514802941437704673" class="btn" target="_blank">Accéder au formulaire</a>
+        </div>
+        
+        <!-- Demandes Section -->
+        <div class="card">
+            <h2><span class="iris-icon"><i class="fas fa-eye"></i></span>Suivi des demandes</h2>
+            <p>Maissa Lokrai peut suivre les listes des demandeurs en temps réel.</p>
+            <a href="https://docs.google.com/spreadsheets/d/1IPIAflHmoTBTwj_1mzfIm1-rx4qhxqCY5--bto3cE5c/edit?resourcekey=&gid=131954497#gid=131954497" class="btn" target="_blank">Voir les demandes</a>
+        </div>
+        
+        <!-- Staff Admission Section -->
+        <div class="card">
+            <h2><span class="iris-icon"><i class="fas fa-user-tie"></i></span>Formulaire d'Admission – NEW STAFF</h2>
+            <p>Formulaire pour les nouvelles admissions du personnel.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSesyYyXIXRWhXJpmwjWaJYBQWMvvsmlvcbzp74plDhNTjLj3g/viewform?usp=sharing&ouid=116514802941437704673" class="btn" target="_blank">Accéder au formulaire</a>
+        </div>
+        
+        <!-- Staff List Section -->
+        <div class="card">
+            <h2><span class="iris-icon"><i class="fas fa-users"></i></span>Liste de tous les staff</h2>
+            <p>Liste complète de tous les membres du personnel.</p>
+            <a href="https://docs.google.com/spreadsheets/d/1b5aq1vVKzNvmUWiqzctEWDetPACBgdqjOYTMuuYJiB4/edit?resourcekey=&gid=484931985#gid=484931985" class="btn" target="_blank">Voir la liste</a>
+        </div>
+        
+        <!-- Attendance Section -->
+        <div class="card">
+            <h2><span class="iris-icon"><i class="fas fa-clipboard-check"></i></span>Feuilles de présence</h2>
+            <p>Feuilles de présence pour tous les groupes et classes VIP, y compris celle de l'apprenante Zahra.</p>
+            <a href="https://docs.google.com/document/d/1OfiQrUfksjoJQW1suTQTbIqlsIp04vKFd2Qba7USO0E/edit?tab=t.0" class="btn" target="_blank">Voir les feuilles</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>IRIS Language Academy &copy; 2023 - Tous droits réservés</p>
+        <p>Chargée de communication: Maissa Lokrai</p>
+    </footer>
+</body>
+</html>
