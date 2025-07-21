@@ -142,6 +142,23 @@
             margin-top: 30px;
         }
         
+        #campagne {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        
+        #campagne header {
+            background: var(--accounting-red);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
         @media (max-width: 768px) {
             .container {
                 grid-template-columns: 1fr;
@@ -215,7 +232,7 @@
         </div>
 
         <!-- Nouvelle Carte: Campagne d'inscription – Août 2025 -->
-        <div class="card accounting" onclick="window.location.href='#campagne';" title="Voir la Campagne d'inscription Août 2025">
+        <div class="card accounting">
             <h2>
                 <span class="iris-icon accounting-icon"><i class="fas fa-bullhorn"></i></span>
                 🚨 Campagne d'inscription – Août 2025
@@ -225,56 +242,56 @@
         </div>
     </div>
 
-    <!-- Section détaillée de la Campagne, cachée par défaut -->
-    <section id="campagne" style="max-width: 1000px; margin: 40px auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.1);">
-        <header style="background: var(--accounting-red); color: white; padding: 20px; border-radius: 8px;">
+    <!-- Section détaillée de la Campagne -->
+    <section id="campagne">
+        <header>
             <h1>🚨 Campagne d'inscription – Août 2025</h1>
             <p><strong>Maissa Lokrai, ceci est votre plan d'action prioritaire.</strong></p>
         </header>
 
-        <article style="padding: 20px; color: #333;">
-            <h2 style="color: var(--accounting-red); border-bottom: 2px solid var(--accounting-red); padding-bottom: 5px;">🎯 Objectif principal</h2>
-            <p>Maximiser le nombre d’inscriptions aux cours d’allemand et d’anglais pour la session d’août 2025.</p>
+        <article>
+            <h2>🎯 Objectif principal</h2>
+            <p>Maximiser le nombre d'inscriptions aux cours d'allemand et d'anglais pour la session d'août 2025.</p>
 
-            <h2 style="color: var(--accounting-red); border-bottom: 2px solid var(--accounting-red); padding-bottom: 5px;">🎯 Public ciblé</h2>
+            <h2>🎯 Public ciblé</h2>
             <ul>
-                <li>Apprenants ayant assisté à un cours d’essai d’allemand (liste fournie).</li>
+                <li>Apprenants ayant assisté à un cours d'essai d'allemand (liste fournie).</li>
                 <li>Personnes motivées par un objectif professionnel, académique ou d'immigration.</li>
             </ul>
 
-            <h2 style="color: var(--accounting-red); border-bottom: 2px solid var(--accounting-red); padding-bottom: 5px;">📞 Actions urgentes pour Maissa Lokrai</h2>
+            <h2>📞 Actions urgentes pour Maissa Lokrai</h2>
             <ol>
                 <li>Appeler individuellement chaque apprenant listé après le cours d'essai.</li>
-                <li>Mettre en avant l'objectif de l’apprenant :
-                    <div style="background: #FFF5F5; padding: 10px; border-left: 5px solid #DC2626; margin: 20px 0;">
-                        « Si votre objectif est de partir en Allemagne, cette session d’août est vivement recommandée. »
+                <li>Mettre en avant l'objectif de l'apprenant :
+                    <div class="highlight-box">
+                        « Si votre objectif est de partir en Allemagne, cette session d'août est vivement recommandée. »
                     </div>
                 </li>
                 <li>Faire la promotion de la campagne sur tous les réseaux (Instagram, Facebook, WhatsApp, etc.).</li>
-                <li>Guider les apprenants vers l’inscription finale.</li>
-                <li>Insister sur la qualité exceptionnelle de l’enseignante (confirmée par le feedback du quiz).</li>
+                <li>Guider les apprenants vers l'inscription finale.</li>
+                <li>Insister sur la qualité exceptionnelle de l'enseignante (confirmée par le feedback du quiz).</li>
             </ol>
 
-            <h2 style="color: var(--accounting-red); border-bottom: 2px solid var(--accounting-red); padding-bottom: 5px;">🧩 Structure du programme</h2>
+            <h2>🧩 Structure du programme</h2>
             <ul>
                 <li>Chaque sous-niveau ≈ 4 semaines</li>
                 <li>3 séances live/semaine (1h30 chacune) + plateforme de pratique</li>
                 <li>Suivi de progression personnalisé</li>
             </ul>
 
-            <h2 style="color: var(--accounting-red); border-bottom: 2px solid var(--accounting-red); padding-bottom: 5px;">📈 Parcours selon niveau</h2>
+            <h2>📈 Parcours selon niveau</h2>
             <ul>
-                <li><strong>Débutant A1-1 :</strong> Objectif B1-1 d’ici octobre 2025</li>
-                <li><strong>Niveau A2-1 :</strong> Objectif B2-1 d’ici octobre 2025</li>
+                <li><strong>Débutant A1-1 :</strong> Objectif B1-1 d'ici octobre 2025</li>
+                <li><strong>Niveau A2-1 :</strong> Objectif B2-1 d'ici octobre 2025</li>
             </ul>
 
-            <h2 style="color: var(--accounting-red); border-bottom: 2px solid var(--accounting-red); padding-bottom: 5px;">📊 Lien vers la liste des apprenants à contacter</h2>
-            <p><a href="https://docs.google.com/spreadsheets/d/1IPIAflHmoTBTwj_1mzfIm1-rx4qhxqCY5--bto3cE5c/edit" target="_blank" style="color: var(--accounting-red); text-decoration: underline;">Mettre à jour la feuille après chaque appel</a></p>
+            <h2>📊 Lien vers la liste des apprenants à contacter</h2>
+            <p><a href="https://docs.google.com/spreadsheets/d/1IPIAflHmoTBTwj_1mzfIm1-rx4qhxqCY5--bto3cE5c/edit" target="_blank">Mettre à jour la feuille après chaque appel</a></p>
 
-            <h2 style="color: var(--accounting-red); border-bottom: 2px solid var(--accounting-red); padding-bottom: 5px;">📬 Coordination</h2>
+            <h2>📬 Coordination</h2>
             <p>Pour toute question, Maissa peut contacter directement <strong>Ishak Zerdazi</strong>.</p>
 
-            <div style="background: #FFF5F5; padding: 10px; border-left: 5px solid #DC2626; margin-top: 30px; font-weight: bold;">
+            <div class="confidential-notice">
                 ⚠️ Ce document est strictement confidentiel – Usage interne uniquement
             </div>
         </article>
@@ -283,5 +300,17 @@
     <footer>
         IRIS Language Academy Management &copy; 2025
     </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
