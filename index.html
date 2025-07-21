@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>IRIS Language Academy - Management</title>
     <style>
         :root {
@@ -11,7 +11,7 @@
             --iris-dark: #4C1D95;
             --iris-petal: linear-gradient(135deg, #9F7AEA 0%, #5D3FD3 100%);
             --accounting-red: #DC2626;
-            --accounting-light: #FECACA;
+            --accounting-light: #FFF5F5;
         }
         
         body {
@@ -64,11 +64,12 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border-top: 4px solid var(--iris-purple);
+            cursor: pointer;
         }
         
         .card.accounting {
             border-top: 4px solid var(--accounting-red);
-            background-color: #FFF5F5;
+            background-color: var(--accounting-light);
         }
         
         .card.accounting h2 {
@@ -147,7 +148,10 @@
             }
         }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 </head>
 <body>
     <header>
@@ -156,72 +160,128 @@
             <h1>IRIS Language Academy Management</h1>
         </div>
     </header>
-    
+
     <div class="container">
-        <!-- Accounting Section - NEW -->
+        <!-- Accounting Section -->
         <div class="card accounting">
-            <h2><span class="iris-icon accounting-icon"><i class="fas fa-file-invoice-dollar"></i></span>Agence comptable</h2>
+            <h2>
+                <span class="iris-icon accounting-icon"><i class="fas fa-file-invoice-dollar"></i></span>
+                Agence comptable
+            </h2>
             <p><strong>Section critique :</strong> Maissa doit mettre à jour les preuves de paiement reçues instantanément ici.</p>
             <a href="https://docs.google.com/forms/d/1WsNKB6GAwauSet_gkCLwsOyHLvhBY1CIgJM9zuHCcJo/edit" class="btn" target="_blank">Accéder au formulaire</a>
         </div>
-        
+
         <!-- Inscriptions Section -->
         <div class="card">
             <h2><span class="iris-icon"><i class="fas fa-user-plus"></i></span>Demande d'inscription</h2>
             <p>Cette section est un lien de formulaire des nouvelles inscriptions.</p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5TEzZs6VIsfSzBEebJzd-Ti5pdUyN-pkSQb520TpusjJ6PQ/viewform?usp=sharing&ouid=116514802941437704673" class="btn" target="_blank">Accéder au formulaire</a>
         </div>
-        
+
         <!-- Préinscrits Section -->
         <div class="card">
             <h2><span class="iris-icon"><i class="fas fa-list"></i></span>Liste des préinscrits</h2>
             <p>Liste des préinscrits dans toutes les matières (allemand, anglais ou autre). Mise à jour en temps réel.</p>
             <a href="https://docs.google.com/spreadsheets/d/1Svc2M9gqeEN-vwzlpP9yqAIDWRwRoHpfN_ZY02mET9M/edit?resourcekey=&gid=1062173178#gid=1062173178" class="btn" target="_blank">Voir la liste</a>
         </div>
-        
+
         <!-- Séance gratuite Section -->
         <div class="card">
             <h2><span class="iris-icon"><i class="fas fa-gift"></i></span>Demande de séance gratuite</h2>
             <p>Formulaire pour les demandes de séances gratuites.</p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSep435kXmGJJeUjhQEmbCyeWOYYcGCMGn-v6rNadpCd3GaA5w/viewform?usp=sharing&ouid=116514802941437704673" class="btn" target="_blank">Accéder au formulaire</a>
         </div>
-        
+
         <!-- Demandes Section -->
         <div class="card">
             <h2><span class="iris-icon"><i class="fas fa-eye"></i></span>Suivi des demandes</h2>
             <p>Maissa Lokrai peut suivre les listes des demandeurs en temps réel.</p>
             <a href="https://docs.google.com/spreadsheets/d/1IPIAflHmoTBTwj_1mzfIm1-rx4qhxqCY5--bto3cE5c/edit?resourcekey=&gid=131954497#gid=131954497" class="btn" target="_blank">Voir les demandes</a>
         </div>
-        
+
         <!-- Staff Admission Section -->
         <div class="card">
             <h2><span class="iris-icon"><i class="fas fa-user-tie"></i></span>Formulaire d'Admission – NEW STAFF</h2>
             <p>Formulaire pour les nouvelles admissions du personnel.</p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSesyYyXIXRWhXJpmwjWaJYBQWMvvsmlvcbzp74plDhNTjLj3g/viewform?usp=sharing&ouid=116514802941437704673" class="btn" target="_blank">Accéder au formulaire</a>
         </div>
-        
+
         <!-- Staff List Section -->
         <div class="card">
             <h2><span class="iris-icon"><i class="fas fa-users"></i></span>Liste de tous les staff</h2>
             <p>Liste complète de tous les membres du personnel.</p>
-            <a href="https://docs.google.com/spreadsheets/d/1b5aq1vVKzNvmUWiqzctEWDetPACBgdqjOYTMuuYJiB4/edit?resourcekey=&gid=484931985#gid=484931985" class="btn" target="_blank">Voir la liste</a>
+            <a href="https://docs.google.com/spreadsheets/d/1JkMDuGLmD9-7iMvg5VTIbfFtVxxJdd8rfk7v0Kl_TGw/edit#gid=2144060562" class="btn" target="_blank">Voir la liste</a>
         </div>
-        
-        <!-- Attendance Section -->
-        <div class="card">
-            <h2><span class="iris-icon"><i class="fas fa-clipboard-check"></i></span>Feuilles de présence</h2>
-            <p>Feuilles de présence pour tous les groupes et classes VIP, y compris celle de l'apprenante Zahra.</p>
-            <a href="https://docs.google.com/document/d/1OfiQrUfksjoJQW1suTQTbIqlsIp04vKFd2Qba7USO0E/edit?tab=t.0" class="btn" target="_blank">Voir les feuilles</a>
+
+        <!-- Nouvelle Carte: Campagne d'inscription – Août 2025 -->
+        <div class="card accounting" onclick="window.location.href='#campagne';" title="Voir la Campagne d'inscription Août 2025">
+            <h2>
+                <span class="iris-icon accounting-icon"><i class="fas fa-bullhorn"></i></span>
+                🚨 Campagne d'inscription – Août 2025
+            </h2>
+            <p><strong>Plan d'action prioritaire pour Maissa Lokrai</strong></p>
+            <a href="#campagne" class="btn">Voir la campagne</a>
         </div>
     </div>
-    
+
+    <!-- Section détaillée de la Campagne, cachée par défaut -->
+    <section id="campagne" style="max-width: 1000px; margin: 40px auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.1);">
+        <header style="background: var(--accounting-red); color: white; padding: 20px; border-radius: 8px;">
+            <h1>🚨 Campagne d'inscription – Août 2025</h1>
+            <p><strong>Maissa Lokrai, ceci est votre plan d'action prioritaire.</strong></p>
+        </header>
+
+        <article style="padding: 20px; color: #333;">
+            <h2 style="color: var(--accounting-red); border-bottom: 2px solid var(--accounting-red); padding-bottom: 5px;">🎯 Objectif principal</h2>
+            <p>Maximiser le nombre d’inscriptions aux cours d’allemand et d’anglais pour la session d’août 2025.</p>
+
+            <h2 style="color: var(--accounting-red); border-bottom: 2px solid var(--accounting-red); padding-bottom: 5px;">🎯 Public ciblé</h2>
+            <ul>
+                <li>Apprenants ayant assisté à un cours d’essai d’allemand (liste fournie).</li>
+                <li>Personnes motivées par un objectif professionnel, académique ou d'immigration.</li>
+            </ul>
+
+            <h2 style="color: var(--accounting-red); border-bottom: 2px solid var(--accounting-red); padding-bottom: 5px;">📞 Actions urgentes pour Maissa Lokrai</h2>
+            <ol>
+                <li>Appeler individuellement chaque apprenant listé après le cours d'essai.</li>
+                <li>Mettre en avant l'objectif de l’apprenant :
+                    <div style="background: #FFF5F5; padding: 10px; border-left: 5px solid #DC2626; margin: 20px 0;">
+                        « Si votre objectif est de partir en Allemagne, cette session d’août est vivement recommandée. »
+                    </div>
+                </li>
+                <li>Faire la promotion de la campagne sur tous les réseaux (Instagram, Facebook, WhatsApp, etc.).</li>
+                <li>Guider les apprenants vers l’inscription finale.</li>
+                <li>Insister sur la qualité exceptionnelle de l’enseignante (confirmée par le feedback du quiz).</li>
+            </ol>
+
+            <h2 style="color: var(--accounting-red); border-bottom: 2px solid var(--accounting-red); padding-bottom: 5px;">🧩 Structure du programme</h2>
+            <ul>
+                <li>Chaque sous-niveau ≈ 4 semaines</li>
+                <li>3 séances live/semaine (1h30 chacune) + plateforme de pratique</li>
+                <li>Suivi de progression personnalisé</li>
+            </ul>
+
+            <h2 style="color: var(--accounting-red); border-bottom: 2px solid var(--accounting-red); padding-bottom: 5px;">📈 Parcours selon niveau</h2>
+            <ul>
+                <li><strong>Débutant A1-1 :</strong> Objectif B1-1 d’ici octobre 2025</li>
+                <li><strong>Niveau A2-1 :</strong> Objectif B2-1 d’ici octobre 2025</li>
+            </ul>
+
+            <h2 style="color: var(--accounting-red); border-bottom: 2px solid var(--accounting-red); padding-bottom: 5px;">📊 Lien vers la liste des apprenants à contacter</h2>
+            <p><a href="https://docs.google.com/spreadsheets/d/1IPIAflHmoTBTwj_1mzfIm1-rx4qhxqCY5--bto3cE5c/edit" target="_blank" style="color: var(--accounting-red); text-decoration: underline;">Mettre à jour la feuille après chaque appel</a></p>
+
+            <h2 style="color: var(--accounting-red); border-bottom: 2px solid var(--accounting-red); padding-bottom: 5px;">📬 Coordination</h2>
+            <p>Pour toute question, Maissa peut contacter directement <strong>Ishak Zerdazi</strong>.</p>
+
+            <div style="background: #FFF5F5; padding: 10px; border-left: 5px solid #DC2626; margin-top: 30px; font-weight: bold;">
+                ⚠️ Ce document est strictement confidentiel – Usage interne uniquement
+            </div>
+        </article>
+    </section>
+
     <footer>
-        <p>IRIS Language Academy &copy; 2025 - Tous droits réservés</p>
-        <p>Chargée de communication: Maissa Lokrai</p>
-        <p>Founder: Ishak ZERDAZI</p>
-        <p>Agent Comptable: Amar Younes</p>
-
-
+        IRIS Language Academy Management &copy; 2025
     </footer>
 </body>
 </html>
